@@ -11,9 +11,9 @@ var option;
 option = {
     title: [
         {
-            text: '嚼槟榔对各种口腔疾病发病率的影响',
+            text: '图表3    嚼槟榔对各种口腔疾病发病率的影响',
 
-            left: 'cente'
+            
         }
     ],
     backgroundColor: '#ffead9',
@@ -26,7 +26,7 @@ option = {
             }
         }
     },
-
+    color: [  'RGB(186,201,196)','RGB(196,186,201)'],
     legend: {
         data: ['嚼食槟榔', '不嚼食槟榔']
     },
@@ -114,7 +114,7 @@ var app = {};
 var title
 var option;
 
-const colors = ['#73c0de', '#91cc75', '#5470c6', '#73c0de', '#73c0de'];
+const colors = [ 'RGB(118,147,137)','RGB(152,174,167)','RGB(186,201,189)', 'RGB(186,201,196)','RGB(186,199,201)']
 const bgColor = '#ffead9';
 const itemStyle = {
     star5: {
@@ -470,7 +470,7 @@ for (let j = 0; j < data.length; ++j) {
 }
 option = {
     title: {
-        text: '关于槟榔的搜索热词',
+        text: '图表8    关于槟榔的搜索热词',
 
         left: 'center'
     },
@@ -565,7 +565,7 @@ var option;
 
 option = {
     title: {
-        text: '槟榔的成分图',
+        text: '图表2    槟榔的成分图',
 
 
         left: 'center'
@@ -582,6 +582,7 @@ option = {
             saveAsImage: { show: true }
         }
     },
+    color: [ 'RGB(118,147,137)','RGB(174,152,160)','RGB(186,201,189)','RGB(191,201,186)','RGB(186,191,201)', 'RGB(186,199,201)','RGB(186,201,196)'],
     series: [
         {
             name: 'Nightingale Chart',
@@ -622,8 +623,8 @@ var option;
 
 option = {
     title: {
-        text: '海南省槟榔种植户占比',
-
+        text: '图表6    海南省槟榔种植户占比',
+fontSize: 200,
         left: 'center'
     },
     tooltip: {
@@ -633,6 +634,7 @@ option = {
         orient: 'vertical',
         left: 'right'
     },
+    color: [  'RGB(186,201,196)','RGB(196,186,201)'],
     series: [
         {
             name: '农户数量（万人）',
@@ -679,7 +681,7 @@ var obj = {
 option = {
 
     title: {
-        text: '吃槟榔时长与OSF（口腔纤维化）癌变关系',
+        text: '图表4    吃槟榔时长与OSF（口腔纤维化）癌变关系',
         subtext:'以咀嚼槟榔1年为参照组，咀嚼槟榔不同时间者的OSF癌变危险度',
 
         left: 'center'
@@ -750,19 +752,20 @@ option = {
             show: true,
             position: 'top',
             distance: 5,
-            color: '#129BED',
+            color: 'RGB(186,199,201)',
             fontWeight: 'bolder',
             fontSize: 24
         },
+        
         itemStyle: {
             normal: {
                 color: function(params) {
                     let colorList = [
-                        { color0: '#ECA641', color1: 'rgba(236,166,65,0.00)' },
-                        { color0: '#2EFE95', color1: 'rgba(46,254,149,0.00)' },
-                        { color0: '#5A6AFF', color1: 'rgba(90,106,255,0.00)' },
-                        { color0: '#2BCEFF', color1: 'rgba(43,206,255,0.00)' },
-                        { color0: '#129BED', color1: 'rgba(18,155,237,0.00)' },
+                        { color0: 'RGB(118,147,137)', color1: 'RGB(118,147,137)' },
+                        { color0: 'RGB(174,152,160)', color1: 'RGB(174,152,160)' },
+                        { color0: 'RGB(186,201,189)', color1: 'RGB(186,201,189)' },
+                        { color0: 'RGB(191,201,186)', color1: 'RGB(191,201,186)' },
+                        { color0: 'RGB(186,201,196)', color1: 'RGB(186,201,196)' },
                     ]
                     return {
                         type: "linear", x: 0, y: 0, x2: 0, y2: 1,
@@ -801,12 +804,13 @@ var option;
 option = {
     title: [
         {
-            text: '槟榔、烟草、酒精成瘾率对比（%）',
+            text: '图表1    槟榔、烟草、酒精成瘾率对比（%）',
             left: 'center'
         }
     ],
     polar: {
         radius: [30, '80%']
+        
     },
     angleAxis: {
         max: 100,
@@ -816,6 +820,7 @@ option = {
         type: 'category',
         data: ['酒精', '烟草', '槟榔', ]
     },
+    color: [ 'RGB(186,201,196)'],
     tooltip: {},
     series: {
         type: 'bar',
@@ -843,7 +848,7 @@ $.get('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json', function (
     myChart.setOption(
         (option = {
             title: {
-                text: '全国各省槟榔相关企业分布',
+                text: '图表7    全国各省槟榔相关企业分布',
 
                 left: 'center'
             },
@@ -864,7 +869,7 @@ $.get('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json', function (
                     { start: 0, end: 100 },
                 ],
                 text: ['高', '低'],
-                color: [ 'RGB(93,100,98)','RGB(116,126,123)','RGB(139,151,147)', 'RGB(162,176,172)','RGB(186,201,196)']
+                color: [ 'RGB(118,147,137)','RGB(152,174,167)','RGB(186,201,189)', 'RGB(186,201,196)','RGB(186,199,201)']
             },
             series: [
                 {
