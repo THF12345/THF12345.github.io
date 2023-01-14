@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#chart-container1 {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+#chart-container2 {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+#chart-container3 {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+#chart-container4 {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+#chart-container5 {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+#chart-container6 {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+#chart-container7 {
+    position: relative;
+    width: 1200px;
+    height:1000px;
+    overflow: hidden;
+}
